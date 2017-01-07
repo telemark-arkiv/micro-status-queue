@@ -20,8 +20,9 @@
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
     "setup": "npm install",
     "standard-fix": "standard --fix",
-    "start": "micro -p 3000",
-    "deploy": "now && now alias"
+    "start": "NODE_ENV=production micro -p 8080",
+    "dev": "micro -p 3000",
+    "now-deploy": "npm test && now --npm && now alias"
   },
   "keywords": [
     "microservice",
