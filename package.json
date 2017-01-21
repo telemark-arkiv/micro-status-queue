@@ -1,7 +1,7 @@
 {
   "name": "micro-status-queue",
-  "description": "Oversikt over køene",
-  "version": "1.1.3",
+  "description": "Status from the various quues",
+  "version": "2.0.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -38,7 +38,7 @@
     "url": "http://github.com/telemarks/micro-status-queue/issues"
   },
   "now": {
-    "alias": "queue.status.tfk.allthethings.win"
+    "alias": "queue.status.t-fk.win"
   },
   "greenkeeper": {
     "emails": false
@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "got": "6.7.1",
+    "marked": "0.3.6",
     "micro": "6.2.0"
   }
 }
