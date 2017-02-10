@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=7.4.0"
+    "node": ">=7.5.0"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
@@ -20,9 +20,9 @@
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
     "setup": "npm install",
     "standard-fix": "standard --fix",
-    "start": "NODE_ENV=production micro -p 8080",
-    "dev": "micro -p 3000",
-    "now-deploy": "npm test && now --npm && now alias"
+    "start": "micro -p 8080",
+    "dev": "micro",
+    "now-deploy": "npm test && now --npm --alias"
   },
   "keywords": [
     "microservice",
@@ -32,26 +32,28 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/telemark/micro-status-queue.git"
+    "url": "https://github.com/telemark/micro-status-queue.git"
   },
   "bugs": {
-    "url": "http://github.com/telemarks/micro-status-queue/issues"
+    "url": "https://github.com/telemarks/micro-status-queue/issues"
   },
   "now": {
-    "alias": "queue.status.t-fk.win"
-  },
-  "greenkeeper": {
-    "emails": false
+    "aliases": [
+      "queue.status.t-fk.win"
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    }
   },
   "devDependencies": {
     "coveralls": "2.11.16",
     "nsp": "2.6.2",
     "standard": "8.6.0",
-    "tap": "10.0.2"
+    "tap": "10.1.0"
   },
   "dependencies": {
     "got": "6.7.1",
     "marked": "0.3.6",
-    "micro": "7.0.2"
+    "micro": "7.0.3"
   }
 }
