@@ -1,7 +1,7 @@
 {
   "name": "micro-status-queue",
   "description": "Status from the various queues",
-  "version": "2.1.8",
+  "version": "2.2.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=7.5.0"
+    "node": ">=8.9.4"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
@@ -32,28 +32,32 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/telemark/micro-status-queue.git"
+    "url": "git+https://github.com/telemark/micro-status-queue.git"
   },
   "bugs": {
     "url": "https://github.com/telemarks/micro-status-queue/issues"
   },
+  "homepage": "https://github.com/telemarks/micro-status-queue#readme",
   "now": {
     "aliases": [
       "queue.status.t-fk.win"
     ],
     "env": {
       "NODE_ENV": "production"
+    },
+    "engines": {
+      "node": "8.9.4"
     }
   },
   "devDependencies": {
-    "tap": "10.3.2",
-    "coveralls": "2.13.0",
-    "nsp": "2.6.3",
-    "standard": "10.0.1"
+    "tap": "11.0.1",
+    "coveralls": "3.0.0",
+    "nsp": "3.1.0",
+    "standard": "10.0.3"
   },
   "dependencies": {
-    "got": "6.7.1",
-    "marked": "0.3.6",
-    "micro": "7.3.0"
+    "got": "8.0.1",
+    "marked": "0.3.9",
+    "micro": "9.0.2"
   }
 }

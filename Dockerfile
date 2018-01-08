@@ -1,14 +1,5 @@
-###########################################################
-#
-# Dockerfile for micro-status-queue
-#
-###########################################################
-
-# Setting the base to nodejs 7.5.0
-FROM node:7.5.0-alpine
-
-# Maintainer
-MAINTAINER Geir Gåsodden
+# Setting the base to nodejs 8.9.4
+FROM node:8.9.4-alpine
 
 #### Begin setup ####
 
